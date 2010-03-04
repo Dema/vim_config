@@ -12,6 +12,9 @@
 " не совместимо с vi
 set nocompatible
 
+" Показывать знак $ при замене слов
+set cpoptions+=$
+
 " хранить больше истории команд ...
 set history=128
 
@@ -28,7 +31,7 @@ set backupdir=~/.vim/backup/
 set directory=~/.vim/swap/
 
 " перерисовывать буфер менее плавно
-"set lazyredraw
+set lazyredraw
 
 " не ждать завершения ESC-последовательностей
 set ttimeoutlen=100
@@ -277,8 +280,8 @@ if has("gui_running")
 	" разрешить фокусу прыгать за мышью между окнами
 	set mousefocus
 
-	" не скрывать указатель при печати
-	set nomousehide
+	" скрывать указатель при печати
+	set mousehide
 
 	" начинать обзор с каталога текущего буфера
 	set browsedir=buffer
