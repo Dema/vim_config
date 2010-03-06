@@ -214,6 +214,8 @@ set pastetoggle=<F12>
 
 " использовать wildmenu ...
 set wildmenu
+" ... как в zsh
+set wildmode=list:longest,full
 
 " ... с авто-дополнением
 set wildcharm=<TAB>
